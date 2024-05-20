@@ -23,8 +23,8 @@
 
 .o-nama-sekcija-slika {
     background: url('img/slika-onama.jpg') center no-repeat;
-    background-size: cover;
-    border-left: 20px solid #272C3F;
+  
+    
 }
 
 @media screen and (max-width: 1024px) {
