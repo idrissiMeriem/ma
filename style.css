@@ -107,9 +107,7 @@ header {
     position: relative;
 }
 
-.navigation-item.usluge-item .navigation-link {
-    pointer-events: none;
-}
+
 .usluge-navigacija-lista {
     position: absolute;
     top: 20px;
@@ -125,7 +123,8 @@ header {
     overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
 }
 
-.navigation-item.usluge-item:hover .usluge-navigacija-lista {
+.navigation-item.usluge-item:hover .usluge-navigacija-lista,
+.navigation-item.usluge-item:focus-within .usluge-navigacija-lista {
     height: 400px;
 }
 
@@ -158,7 +157,7 @@ header {
     color: #f0b105;
 }
 
-.navigation-item.logo .navigation-link {
+.navigation-item.log .navigation-link {
     font-family: 'IM Fell French Canon SC', sans-serif;
     font-size: 2rem;
     color: #f1d27b;
@@ -168,11 +167,7 @@ header {
     display: none;
 }
 
-.toggle i {
-    font-size: 2rem;
-    color: #fffff2;
-    cursor: pointer;
-}
+
 
 /*pocetna*/
 
@@ -524,11 +519,56 @@ h1.boja-loga {
     border-top: 1px solid rgba(255, 255, 242, 0.3);
 }
 
-
-
-
-/*Au moins de   1024px*/    /*valider*/
+/*Au moins de 1024px*/    /*valider*/
 @media screen and (max-width: 1024px) {
+    .navigation-item.logo {
+        display: none;
+    }
+
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(146, 146, 10, 0.3);
+        position: relative;
+    }
+    
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        transition: .5s ease;
+    }
+    
+    .navigation-item {
+        margin-right: 20px;
+    }
+    
+    
+    .navigation-item.log .navigation-link {
+        font-family: 'IM Fell French Canon SC', sans-serif;
+        font-size: 1rem;
+        color: #f1d27b;
+    }
+    
+    .navigation-item.close {
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fffff2;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .navigation-item.usluge-item {
+        position: relative;
+    }
+    
+    .navigation-item.usluge-item .navigation-link {
+        pointer-events: none;
+    }
 
     .contact-info .contact-data i {
         color: rgb(100, 65, 0);
@@ -553,53 +593,111 @@ h1.boja-loga {
         padding-right: 50px;
     }
 
-    /* La liste */
-    
-.usluge-navigacija-lista {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    background-color: #2b2b2c;
-    width: 300px; /* Ajustez la largeur selon vos besoins */
-    height: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    transition: .7s ease;
-    overflow: hidden;
-    overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
+    body {
+        overflow-x: hidden; /* Ajoute cette ligne pour empêcher le débordement horizontal */
+    }
+
+    .container {
+        max-width: 100%; /* Assure que le conteneur ne dépasse pas la largeur de l'écran */
+        overflow-x: hidden; /* Ajoute cette ligne pour éviter le débordement horizontal */
+    }
+
+    .content {
+        padding: 0 20px; /* Ajoute un peu de padding pour améliorer l'apparence sur des écrans plus petits */
+    }
+
+    .usluge-navigacija-lista {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-color: #2b2b2c;
+        width: 200px; /* Ajustez la largeur selon vos besoins */
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: .7s ease;
+        overflow: hidden;
+        font-size: 12px;
+        overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
+    }
+   
+
+
+
+      /* Réduire la taille de la navigation */
+      .navigation-list {
+        padding: 5px; /* Ajoutez ou ajustez le rembourrage selon vos besoins */
+    }
+
+    /* Réduire la taille de la police des éléments de navigation */
+    .navigation-link {
+        font-size: 12px; /* Ajustez la taille de la police selon vos besoins */
+    }
+
+    /* Réduire l'espace entre les éléments de navigation */
+    .navigation-item {
+        margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
+    }
 }
 
-.navigation-item.usluge-item:hover .usluge-navigacija-lista {
-    height: 400px;
-}
-
-.usluge-navigacija-lista li:first-child {
-    padding-top: 20px;
-}
-
-.usluge-navigacija-lista li {
-    padding: 0 20px;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.usluge-navigacija-lista li a {
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.usluge-navigacija-lista li a:hover {
-    color: #f0b105;
-    transition: .5s ease;
-}
-
-}
-
-
-
-/*Au moins de  768px*/     /*Valider*/
+/*Au moins de 768px*/     /*Valider*/
 @media screen and (max-width: 768px) {
+    .navigation-item.logo {
+        display: none;
+    }
+    .navigation-item.log .navigation-link {
+        font-family: 'IM Fell French Canon SC', sans-serif;
+        font-size: 1rem;
+        color: #f1d27b;
+    }
 
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(146, 146, 10, 0.3);
+        position: relative;
+    }
+    
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        transition: .5s ease;
+    }
+    
+    .navigation-item {
+        margin-right: 20px;
+    }
+    
+    
+    
+    
+    .navigation-item.close {
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fffff2;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .navigation-item.usluge-item {
+        position: relative;
+    }
+    
+    .navigation-item.usluge-item .navigation-link {
+        pointer-events: none;
+    }
+
+    .contact-info .contact-data i {
+        color: rgb(100, 65, 0);
+    }
+    .navigation-item.logo {
+        display: none;
+    }
     .contact-info .contact-data i {
         color: rgb(100, 65, 0);
     }
@@ -612,45 +710,7 @@ h1.boja-loga {
         font-size: 0.9rem;
     }
 
-    .navigation-list {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: flex-start;
-        background-color: #272C3F;
-        padding-top: 50px;
-        z-index: 100;
-    }
-
-    .navigation-item.logo {
-        display: none;
-    }
-
-    .navigation-item {
-        margin: 30px 0;
-    }
-
-    .navigation-item.close {
-        display: initial;
-        margin: 0;
-    }
-
-    .navigation-link {
-        font-size: 1rem;
-    }
-
-    .usluge-navigacija-lista {
-        left: -100%;
-        margin-top: 10px; /* Ajoute un espace en haut */
-        margin-bottom: 10px; /* Ajoute un espace en bas */
-    }
-
-    .toggle {
-        display: initial;
-    }
+    
 
     .usluge {
         grid-template-columns: 1fr 1fr;
@@ -662,7 +722,8 @@ h1.boja-loga {
     }
 
     .o-nama-slika {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         margin: auto;
     }
 
@@ -674,51 +735,149 @@ h1.boja-loga {
     }
 
     .kontakt-section {
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
 
     .kontakt-forma form {
-        width: 80%;
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
     }
 
     .footer-navigacija {
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 1fr 1fr;
         row-gap: 50px;
     }
 
-    /* La liste */
+    body {
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+    }
+
+    .container {
+        max-width: 100%; /* Assure que le conteneur ne dépasse pas la largeur de l'écran */
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+    }
+
+    .content {
+        padding: 0 15px; /* Ajoute un peu de padding pour améliorer l'apparence sur des écrans plus petits */
+    }
+
+
     .usluge-navigacija-lista {
-        position: static;
-        display: none;
-        width: auto;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-    .navigation-item:hover .usluge-navigacija-lista {
-        display: block;
-        position: relative;
-        background-color: #272C3F;
-        z-index: 100;
-        width: 100%;
+        position: absolute;
+        top: 20px;
         left: 0;
+        background-color: #2b2b2c;
+        width: 200px; /* Ajustez la largeur selon vos besoins */
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: .7s ease;
+        overflow: hidden;
+        font-size: 12px;
+        overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
+    }
+   
+
+
+
+      /* Réduire la taille de la navigation */
+      .navigation-list {
+        padding: 5px; /* Ajoutez ou ajustez le rembourrage selon vos besoins */
     }
 
-    .usluge-navigacija-lista li {
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 5px 0;
-        white-space: nowrap;
+    /* Réduire la taille de la police des éléments de navigation */
+    .navigation-link {
+        font-size: 12px; /* Ajustez la taille de la police selon vos besoins */
+    }
+
+    /* Réduire l'espace entre les éléments de navigation */
+    .navigation-item {
+        margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
     }
 }
 
+.whatsapp-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #4CAF50; /* Couleur verte */
+}
+
+.whatsapp-link i {
+    color: #4CAF50; /* Couleur verte */
+    margin-right: 5px; /* Espace à droite de l'icône */
+    margin-bottom: -2px; /* Ajustement vertical vers le bas */
+}
+
+.map {
+    float: left;
+}
 
 
-
-/*Au moins de  500px*/        /*Valide*/
+/*Au moins de 500px*/        /*Valide*/
 @media screen and (max-width: 450px) {
+    .navigation-item.logo {
+        display: none;
+    }
+    .navigation-item.log .navigation-link {
+        font-family: 'IM Fell French Canon SC', sans-serif;
+        font-size: 1rem;
+        color: #f1d27b;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(146, 146, 10, 0.3);
+        position: relative;
+    }
+    
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        transition: .5s ease;
+    }
+    
+    .navigation-item {
+        margin-right: 20px;
+    }
+    
+    
+    
+    
+    .navigation-item.close {
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fffff2;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .navigation-item.usluge-item {
+        position: relative;
+    }
+    
+    .navigation-item.usluge-item .navigation-link {
+        pointer-events: none;
+    }
+
+    .contact-info .contact-data i {
+        color: rgb(100, 65, 0);
+    }
+    .navigation-item.logo {
+        display: none;
+    }
     .contact-data span {
         font-size: 16px;
         font-weight: bold;
@@ -749,7 +908,8 @@ h1.boja-loga {
 
     .pocetna-text {
         margin-left: 20px;
-        padding-right: 100px;
+        padding-right: 20px; /* Ajusté pour éviter les débordements horizontaux */
+        margin-bottom: 20px; /* Ajusté pour éviter les débordements verticaux */
     }
 
     .usluge {
@@ -757,7 +917,7 @@ h1.boja-loga {
     }
 
     .pozovite-nas-section {
-        padding: 20px 50px;
+        padding: 20px;
     }
 
     footer {
@@ -797,12 +957,9 @@ h1.boja-loga {
     }
 
     .kontakt-forma form {
-        width: 80%;
-    }
-
-    .pocetna-text {
-        padding-right: 20px;
-        margin-bottom: -340px;
+        width: 100%;
+        max-width: 80%; /* Assure une meilleure apparence et centrage */
+        margin: auto;
     }
 
     .pocetna-text h1 {
@@ -814,19 +971,21 @@ h1.boja-loga {
     }
 
     .usluge-section {
-        padding: 100px 20px;
+        padding: 50px 20px;
     }
 
     .o-nama-section {
-        padding: 100px 20px;
+        padding: 50px 20px;
     }
 
     .o-nama-slika {
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
+        margin: auto;
     }
 
     .kontakt-section {
-        padding: 100px 20px;
+        padding: 50px 20px;
         column-gap: 0;
     }
 
@@ -865,54 +1024,109 @@ h1.boja-loga {
         overflow-x: hidden;
     }
 
-    /* La liste */
+    .container {
+        max-width: 100%; /* Assure que le conteneur ne dépasse pas la largeur de l'écran */
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+    }
+
+    .content {
+        padding: 0 15px; /* Ajoute un peu de padding pour améliorer l'apparence sur des écrans plus petits */
+    }
+    .usluge-navigacija-lista {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-color: #2b2b2c;
+        width: 200px; /* Ajustez la largeur selon vos besoins */
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: .7s ease;
+        overflow: hidden;
+        font-size: 12px;
+        overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
+    }
    
-.usluge-navigacija-lista {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    background-color: #2b2b2c;
-    width: 300px; /* Ajustez la largeur selon vos besoins */
-    height: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    transition: .7s ease;
-    overflow: hidden;
-    overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
-}
 
-.navigation-item.usluge-item:hover .usluge-navigacija-lista {
-    height: 400px;
-}
 
-.usluge-navigacija-lista li:first-child {
-    padding-top: 20px;
-}
 
-.usluge-navigacija-lista li {
-    padding: 0 20px;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
+      /* Réduire la taille de la navigation */
+      .navigation-list {
+        padding: 5px; /* Ajoutez ou ajustez le rembourrage selon vos besoins */
+    }
 
-.usluge-navigacija-lista li a {
-    font-weight: 700;
-    color: #ffffff;
-}
+    /* Réduire la taille de la police des éléments de navigation */
+    .navigation-link {
+        font-size: 12px; /* Ajustez la taille de la police selon vos besoins */
+    }
 
-.usluge-navigacija-lista li a:hover {
-    color: #f0b105;
-    transition: .5s ease;
-}
-
+    /* Réduire l'espace entre les éléments de navigation */
+    .navigation-item {
+        margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
+    }
 }
 
 
-.open {
-    left: 0;
-}
+
+
 
 @media screen and (max-width: 400px) {
+    .navigation-item.logo {
+        display: none;
+    }
+    .navigation-item.log .navigation-link {
+        font-family: 'IM Fell French Canon SC', sans-serif;
+        font-size: 1rem;
+        color: #f1d27b;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(146, 146, 10, 0.3);
+        position: relative;
+    }
+    
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        transition: .5s ease;
+    }
+    
+    .navigation-item {
+        margin-right: 20px;
+    }
+    
+    
+    
+    
+    .navigation-item.close {
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fffff2;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .navigation-item.usluge-item {
+        position: relative;
+    }
+    
+    .navigation-item.usluge-item .navigation-link {
+        pointer-events: none;
+    }
+
+    .contact-info .contact-data i {
+        color: rgb(100, 65, 0);
+    }
+    .navigation-item.logo {
+        display: none;
+    }
     
     /* Alignement de la section contact-info */
     .contact-info {
@@ -1014,68 +1228,38 @@ h1.boja-loga {
 
     /* Styles pour la liste usluge-navigacija-lista */
  
-
-   
-
     .usluge-navigacija-lista {
         position: absolute;
         top: 20px;
         left: 0;
         background-color: #2b2b2c;
-        width: 300px; /* Ajustez la largeur selon vos besoins */
+        width: 200px; /* Ajustez la largeur selon vos besoins */
         height: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         transition: .7s ease;
         overflow: hidden;
+        font-size: 12px;
         overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
     }
-    
-    .navigation-item.usluge-item:hover .usluge-navigacija-lista {
-        height: 600px;
+   
 
+
+
+      /* Réduire la taille de la navigation */
+      .navigation-list {
+        padding: 5px; /* Ajoutez ou ajustez le rembourrage selon vos besoins */
+    }
+
+    /* Réduire la taille de la police des éléments de navigation */
+    .navigation-link {
+        font-size: 12px; /* Ajustez la taille de la police selon vos besoins */
+    }
+
+    /* Réduire l'espace entre les éléments de navigation */
+    .navigation-item {
+        margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
     }
     
-    .usluge-navigacija-lista li:first-child {
-        padding-top: 20px;
-    }
-    
-    .usluge-navigacija-lista li {
-        padding: 0 20px;
-        white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    }
-    
-    .usluge-navigacija-lista li a {
-        font-weight: 700;
-        color: #ffffff;
-    }
-    
-    .usluge-navigacija-lista li a:hover {
-        color: #f0b105;
-        transition: .5s ease;
-    }
-    
-}
-
-
-
-
-
-.whatsapp-link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    color: #4CAF50; /* Couleur verte */
-  
-  }
-  
-  .whatsapp-link i {
-    color: #4CAF50; /* Couleur verte */
-    margin-right: 5px; /* Espace à droite de l'icône */
-    margin-bottom: -2px; /* Ajustement vertical vers le bas */
-  }
-
-  .map {
-    float: left;
 }
