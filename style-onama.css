@@ -7,7 +7,7 @@
 }
 
 .o-nama-sekcija {
-    padding: 100px 150px;
+    padding: 50px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
@@ -62,6 +62,22 @@
     .o-nama-sekcija {
         padding: 100px 20px;
     }
+}
+
+
+
+
+
+.naslova {
+    font-family: 'IM Fell French Canon SC', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #48484a;
+    padding: 0 20px;
+    border-right: 3px solid #C0B596;
+    border-left: 3px solid #C0B596;
+    display: inline-block;
+    
 }
 
 

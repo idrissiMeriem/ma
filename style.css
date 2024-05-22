@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
 
- 
-
+.contact-data span {
+    font-size: 14px; /* Font size for smaller screens */
+}
 
 
 
@@ -639,10 +640,19 @@ h1.boja-loga {
     .navigation-item {
         margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
     }
+    .contact-info{
+        font-size: 13px;
+    }
 }
 
 /*Au moins de 768px*/     /*Valider*/
 @media screen and (max-width: 768px) {
+
+    .contact-data span {
+        font-size: 13px; /* Font size for smaller screens */
+    }
+
+
     .navigation-item.logo {
         display: none;
     }
@@ -1065,6 +1075,9 @@ h1.boja-loga {
     .navigation-item {
         margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
     }
+    .contact-data span {
+        font-size: 13px; /* Font size for smaller screens */
+    }
 }
 
 
@@ -1260,6 +1273,9 @@ h1.boja-loga {
     /* Réduire l'espace entre les éléments de navigation */
     .navigation-item {
         margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
+    }
+    .contact-data span {
+        font-size: 13px; /* Font size for smaller screens */
     }
     
 }
