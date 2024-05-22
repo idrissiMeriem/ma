@@ -174,7 +174,7 @@ header {
 
 .pocetna-section {
     height: 100vh;
-    background: linear-gradient(to right, rgba(18, 21, 31, 0.8), rgba(4, 5, 7, 0.8)), url('img/pozadina-pocetna.jpg') center no-repeat;
+    background:  url('img/pozadina-pocetna.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -387,7 +387,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    background: linear-gradient(to right, rgba(39, 44, 63, 0.8), rgba(39, 44, 63, 0.8)), url('img/kontakt-pozadina.jpg') center no-repeat;
+    background:  url('img/kontakt-pozadina.jpg') center no-repeat;
     background-size: cover;
 }
 

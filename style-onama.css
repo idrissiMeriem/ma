@@ -1,6 +1,6 @@
 .pocetna-section-onama {
     height: 100vh;
-    background: linear-gradient(to right, rgba(18, 21, 31, 0.8), rgba(4, 5, 7, 0.8)), url('img/pozadina-pocetna.jpg') center no-repeat;
+    background:  url('img/p1.PNG') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;

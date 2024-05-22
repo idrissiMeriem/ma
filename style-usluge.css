@@ -1,6 +1,6 @@
 .pocetna-section-usluge {
     height: 100vh;
-    background: linear-gradient(to right, rgba(18, 21, 31, 0.8), rgba(4, 5, 7, 0.8)), url('img/pozadina-usluge.jpg') center no-repeat;
+    background: url('img/pozadina-usluge.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgba(39, 44, 63, 0.8), rgba(32, 36, 54, 0.8)), url('img/konsultacija.jpg') center no-repeat;
+    background:url('img/konsultacija.jpg') center no-repeat;
     background-size: cover;
 }
 
