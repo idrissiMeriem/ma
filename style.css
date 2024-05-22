@@ -649,7 +649,7 @@ h1.boja-loga {
 @media screen and (max-width: 768px) {
 
     .contact-data span {
-        font-size: 13px; /* Font size for smaller screens */
+        font-size: 12px; /* Font size for smaller screens */
     }
 
 
@@ -1076,7 +1076,7 @@ h1.boja-loga {
         margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
     }
     .contact-data span {
-        font-size: 13px; /* Font size for smaller screens */
+        font-size: 12px; /* Font size for smaller screens */
     }
 }
 
@@ -1275,7 +1275,7 @@ h1.boja-loga {
         margin-bottom: 1px; /* Ajustez l'espace selon vos besoins */
     }
     .contact-data span {
-        font-size: 13px; /* Font size for smaller screens */
+        font-size: 12px; /* Font size for smaller screens */
     }
     
 }
