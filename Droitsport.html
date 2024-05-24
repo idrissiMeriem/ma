@@ -44,27 +44,48 @@
                 <li class="navigation-item log"><a href="index.html" class="navigation-link" style="         
                     margin-left: 10px; color: #f1d27b; font-family: 'IM Fell French Canon SC', sans-serif"
                      > lawyer</a></li>
-                <li class="navigation-item usluge-item"><a href="" class="navigation-link" >DOMAINES D’ACTIVITÉ</a>
-                    <ul class="usluge-navigacija-lista">
-                        <li style="text-align: right;"><a href="usluge-krivicno-pravo.html">القانون الجنائي للأعمال-</a></li>
-                        <li style="text-align: right;"><a href="usluge-gradjansko-pravo.html">قانون الصحافة و النشر-</a></li>
-                        <li style="text-align: right;"><a href="usluge-privredno-pravo.html">القانون الأعمال-</a></li>
-                        <li style="text-align: right;"><a href="usluge-saobracajne-nesrece.html">قانون الوساطة و التحكيم-</a></li>
-                        <li style="text-align: right;"><a href="usluge-ugovorno-pravo.html">القضاية الأسرة-</a></li>
-                        <li style="text-align: right;"><a href="droitRecoursElectoraux.html">الطعون الانتخابية-</a></li>
-                        <li style="text-align: right;"><a href="LoiArbitrageElectoral.html">حقوق الإنسان وقانون الدولي الإنساني-</a></li>
-                        <li style="text-align: right;"><a href="DroitMediationArbitrage.html">قانون البيئي-</a></li>
-                        <li style="text-align: right;"><a href="Droitidee.html">قانون الملكية الفكرية-</a></li>
-                        <li style="text-align: right;"><a href="DroitTravail.html">قانون الشغل-</a></li>
-                        <li style="text-align: right;"><a href="dariba.html">المنازعات الضريبة-</a></li>
-                        <li style="text-align: right;"><a href="Droitidara.html">القضاية الإدارية-</a></li>
-                        <li style="text-align: right;"><a href="Droitsport.html">القضاية الرياضية-</a></li>
-                        <li style="text-align: right;"><a href="milkia.html">  قانون الملكية المشتركة -</a></li>
+                    <li class="navigation-item usluge-item"><a href="" class="navigation-link" >DOMAINES D’ACTIVITÉ</a>
+                        <ul class="usluge-navigacija-lista">
+                            <li style="text-align: left;"><a href="usluge-krivicno-pravo.html">- Droit pénal des affaires</a></li>
+                            <li style="text-align: left;"><a href="usluge-gradjansko-pravo.html">- Droit de la presse et de l'édition</a></li>
+                            <li style="text-align: left;"><a href="usluge-privredno-pravo.html">- Droit des affaires</a></li>
+                            <li style="text-align: left;"><a href="usluge-saobracajne-nesrece.html">- Droit de la médiation et de l'arbitrage</a></li>
+                            <li style="text-align: left;"><a href="usluge-ugovorno-pravo.html">- Droit de la famille</a></li>
+                            <li style="text-align: left;"><a href="droitRecoursElectoraux.html">- Contentieux électoraux</a></li>
+                            <li style="text-align: left;"><a href="LoiArbitrageElectoral.html">- Droits de l'homme et droit international humanitaire</a></li>
+                            <li style="text-align: left;"><a href="DroitMediationArbitrage.html">- Droit de l'environnement</a></li>
+                            <li style="text-align: left;"><a href="Droitidee.html">- Droit de la propriété intellectuelle</a></li>
+                            <li style="text-align: left;"><a href="DroitTravail.html">- Droit du travail</a></li>
+                            <li style="text-align: left;"><a href="dariba.html">- Contentieux fiscal</a></li>
+                            <li style="text-align: left;"><a href="Droitidara.html">- Contentieux administratif</a></li>
+                            <li style="text-align: left;"><a href="Droitsport.html">- Contentieux sportif</a></li>
+                            <li style="text-align: left;"><a href="milkia.html">- Droit de la copropriété</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation-item"><a href="o-nama.html" class="navigation-link">  CABINET</a></li>
+                    <li class="navigation-item"><a href="#kontakt" class="navigation-link">CONTACT</a></li>
+                    <nav class="navbar">
+                        <div class="container">
+                            <div class="navbar-menu">
+                                <select id="languageSelect">
+                                    <option value="Droitsport.html">Français</option>
 
-                    </ul>
-                </li>
-                <li class="navigation-item"><a href="o-nama.html" class="navigation-link">  CABINET</a></li>
-                <li class="navigation-item"><a href="#kontakt" class="navigation-link">CONTACT</a></li>
+                                    <option value="DroitsportArab.html">Arabe</option>
+        
+                                    <option value="DroitsportAng.html">Anglais</option>
+                                </select>
+                            </div>
+                        </div>
+                    </nav>
+                         
+     <script>
+        document.getElementById("languageSelect").addEventListener("change", function() {
+            var selectedValue = this.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        });
+        </script>
             </ul>
             <div class="toggle">
                 <i class="fas fa-bars"></i>
