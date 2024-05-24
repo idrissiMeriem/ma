@@ -618,7 +618,7 @@ h1.boja-loga {
         justify-content: space-around;
         transition: .7s ease;
         overflow: hidden;
-        font-size: 12px;
+        font-size: 10px;
     }
    
 
@@ -788,7 +788,7 @@ h1.boja-loga {
         justify-content: space-around;
         transition: .7s ease;
         overflow: hidden;
-        font-size: 12px;
+        font-size: 10px;
         overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
     }
    
@@ -1052,7 +1052,7 @@ h1.boja-loga {
         justify-content: space-around;
         transition: .7s ease;
         overflow: hidden;
-        font-size: 12px;
+        font-size: 10px;
     }
    
 
@@ -1250,7 +1250,7 @@ h1.boja-loga {
         justify-content: space-around;
         transition: .7s ease;
         overflow: hidden;
-        font-size: 12px;
+        font-size: 10px;
         overflow-y: scroll; /* Ajoute la barre de défilement verticale si nécessaire */
     }
    
