@@ -522,6 +522,14 @@ h1.boja-loga {
 
 /*Au moins de 1024px*/    /*valider*/
 @media screen and (max-width: 1024px) {
+
+
+
+     .masp,
+    .social-link {
+        display: block;
+        margin: 10px auto;
+    }
     .navigation-item.logo {
         display: none;
     }
@@ -647,6 +655,13 @@ h1.boja-loga {
 
 /*Au moins de 768px*/     /*Valider*/
 @media screen and (max-width: 768px) {
+
+
+     .masp,
+    .social-link {
+        display: block;
+        margin: 10px auto;
+    }
 
     .contact-data span {
         font-size: 12px; /* Font size for smaller screens */
@@ -1078,6 +1093,11 @@ h1.boja-loga {
     .contact-data span {
         font-size: 12px; /* Font size for smaller screens */
     }
+     .masp,
+    .social-link {
+        display: block;
+        margin: 10px auto;
+    }
 }
 
 
@@ -1276,6 +1296,11 @@ h1.boja-loga {
     }
     .contact-data span {
         font-size: 12px; /* Font size for smaller screens */
+    }
+     .masp,
+    .social-link {
+        display: block;
+        margin: 10px auto;
     }
     
 }
