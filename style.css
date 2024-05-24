@@ -383,8 +383,10 @@ header {
 }
 
 /* kontakt section */
+/* kontakt section */
 
 .kontakt-section {
+    color: #C0B596;
     padding: 100px 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -398,14 +400,14 @@ header {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #ffffff; /* Correction: 'ffffff' au lieu de 'fffff2' */
+    color: #271c1c; /* Correction: 'ffffff' au lieu de 'fffff2' */
 }
 
 .kontakt-text p {
     font-weight: 300;
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: #ffffff; /* Correction: 'ffffff' au lieu de 'fffff2' */
+    color: #403434; /* Correction: 'ffffff' au lieu de 'fffff2' */
 }
 .kontakt-forma form {
     display: flex;
@@ -419,12 +421,12 @@ header {
     margin: 10px 0;
     outline: none;
     border: 1px solid rgba(192, 181, 150, 0.9);
-    color: #fffff2;
+    color: #5f5f4c;
     background-color: rgba(192, 181, 150, 0.6);
 }
 
 .kontakt-forma form input::placeholder {
-    color: #fffff2;
+    color: #575749;
 }
 
 .kontakt-forma form select {
@@ -434,7 +436,7 @@ header {
     margin: 10px 0;
     outline: none;
     border: 1px solid rgba(192, 181, 150, 0.9);
-    color: #fffff2;
+    color: #39392c;
     background-color: rgba(192, 181, 150, 0.6);
 }
 
@@ -444,7 +446,7 @@ header {
     padding: 10px 20px;
     margin: 10px 0;
     outline: none;
-    border: 1px solid rgba(192, 181, 150, 0.9);
+    border: 1px solid rgba(83, 78, 63, 0.9);
     color: #fffff2;
     background-color: rgba(192, 181, 150, 0.6);
 }
@@ -459,7 +461,6 @@ header {
     color: #fffff2;
     padding: 10px 30px;
 }
-
 /* footer */
 
 footer {
